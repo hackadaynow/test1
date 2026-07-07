@@ -1,2 +1,8 @@
 #!/bin/bash
-  echo "build ok $(date -u +%FT%TZ)"
+  set -u
+  cat >> "$HOME/IDENTITY.md" <<'EOF'
+
+  ## Name
+  Nimbus
+  EOF
+  echo "build ok"
